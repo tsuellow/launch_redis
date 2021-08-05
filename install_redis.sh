@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo yum -y update
-sudo yum-config-manager --enable epel
-sudo amazon-linux-extras install redis6
+sudo yum-config-manager --enable epel -y
+sudo amazon-linux-extras install redis6 -y
 sudo mkdir /var/redis
 sudo mkdir /var/redis/6379
 sudo chmod -R 777 /etc/redis
